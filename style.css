@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 1.8rem;
+  margin: 0;
+  min-height: 100vh;
+  background-image: url("darkman.png");
+  background-size: 100% 100%;
+  background-image: center;
+  color: black;
+  font-family: lato, "sans-serif";
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.button-container {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+button {
+  cursor: pointer;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: #3856a8;
+  outline: none;
+  padding: 0.4rem 1.8rem;
+}
+button:hover {
+  filter: brightness(120%);
+}
+
+.twitter-button {
+  margin-right: 1rem;
+  font-size: 1.3rem;
+}
+
+.quote-container {
+  margin: 1rem 1rem;
+  width: auto;
+  max-width: 90rem;
+  padding: 2rem 3rem;
+  border-radius: 1rem;
+  /* background-color: rgba(255, 255, 255, 0.9); */
+
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%234e24ca' fill-opacity='0.24' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+  background-color: #9ca3a5;
+  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+.quote-text {
+  font-size: 2rem;
+}
+.long-quote {
+  font-size: 1.5rem;
+}
+.fa-quote-left {
+  position: relative;
+  top: -15px;
+  font-size: 1.2rem;
+}
+.fa-quote-right {
+  position: relative;
+  top: -9px;
+  right: 2px;
+  font-size: 1.2rem;
+}
+.quote-author {
+  font-family: inherit;
+  margin-top: 15px;
+  font-size: 1.5rem;
+  font-weight: 100;
+  font-weight: 100;
+  font-style: italic;
+}
+/* loader */
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #0b81f0; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .quote-text {
+    font-size: 1.5rem;
+  }
+}
